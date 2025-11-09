@@ -203,6 +203,7 @@ footer{
 }
 
 .instagram-link {
+  color:black;
   background: #ffeb3b;
   padding: 15px 25px;
   border-radius: 10px;
@@ -210,6 +211,7 @@ footer{
   font-weight: bold;
   display: inline-block;
 }
+
 
 
 
