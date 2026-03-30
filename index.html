@@ -22,16 +22,71 @@
   </header>
 
 <div class="main">
-  <h1>当店の魅力</h1>
-  <section class="about">
-  <ul>
-    <li>🍜 美味しい・安い・楽しい・早い！</li>
-    <li>👪 幅広い層のお客様にご愛顧いただいています</li>
-    <li>📖 本格中華をランチ・ディナーで</li>
-    <li>🍺 ちょい飲み・飲み会にも！</li>
-  </ul>
- </section>
+  <h1>予約フォーム</h1>
+  <section class="yoyaku">
+    <form action="https://formspree.io/f/xldlzgvj" method="POST">
+  
+  <!-- 注意書き -->
+  <p style="color:red; font-weight:bold; background-color: #ffecec; padding:10px; border-radius:5px;">
+    ※このフォーム送信だけでは予約は確定しません。<br>
+    店舗からの確認連絡をもってご予約確定となります。
+    お電話でのご予約も可能です。
+    当日のご予約はお電話のみで対応いたします。
+  </p>
 
+  <label for="name">お名前</label>
+  <input type="text" id="name" name="name" placeholder="お名前を入力" required>
+
+  <label for="email">メールアドレス</label>
+  <input type="email" id="email" name="_replyto" placeholder="例: example@example.com" required>
+
+  <label for="phone">電話番号</label>
+  <input type="tel" id="phone" name="phone" placeholder="例: 090-1234-5678" required>
+
+  <label for="date">予約希望日</label>
+  <input type="date" id="date" name="date" required>
+
+  <label for="time">予約希望時間</label>
+  <input type="time" id="time" name="time" required>
+
+  <label for="people">人数</label>
+  <input type="number" id="people" name="people" min="2" placeholder="人数を入力" required>
+
+  <label for="message">その他ご要望</label>
+  <textarea id="message" name="message" placeholder="特記事項があればご記入ください"></textarea>
+
+  <!-- 送信後の遷移先 -->
+  <input type="hidden" name="_next" value="C:\Users\81805\OneDrive\デスクトップ\html\yoyaku-thanks.html">
+
+  <!-- スパム防止 -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button type="submit">送信</button>
+</form>
+
+  </section>
+
+  <h1>お問い合わせ</h1>
+<section class="main otoiawase">
+ <form action="https://formspree.io/f/mrblrnjp" method="POST">
+  <ul>
+  <li><label for="name">お名前</label>
+  <input type="text" id="name" name="name" placeholder="お名前を入力" required>
+  </li>
+ <li><label for="email">メールアドレス</label>
+  <input type="email" id="email" name="_replyto" placeholder="例: example@example.com" required>
+   </li>
+ <li><label for="message">お問い合わせ内容</label>
+  <textarea id="message" name="message" placeholder="ご質問・ご相談内容を入力" required></textarea>
+  </li>
+  <!-- 送信後の遷移先（サンクスページ） -->
+  <input type="hidden" name="_next" value="https://あなたのサイト.com/thanks.html">
+
+  <!-- スパム防止用（空欄のままに） -->
+  <input type="text" name="_gotcha" style="display:none">
+
+ <li><button type="submit">送信</button></li>
+  </ul>
 
 
  <h1>メニュー</h1>
@@ -128,72 +183,17 @@
     </ul>
     
   </section>
-
-  <h1>予約フォーム</h1>
-  <section class="yoyaku">
-    <form action="https://formspree.io/f/xldlzgvj" method="POST">
-  
-  <!-- 注意書き -->
-  <p style="color:red; font-weight:bold; background-color: #ffecec; padding:10px; border-radius:5px;">
-    ※このフォーム送信だけでは予約は確定しません。<br>
-    店舗からの確認連絡をもってご予約確定となります。
-    お電話でのご予約も可能です。
-    当日のご予約はお電話のみで対応いたします。
-  </p>
-
-  <label for="name">お名前</label>
-  <input type="text" id="name" name="name" placeholder="お名前を入力" required>
-
-  <label for="email">メールアドレス</label>
-  <input type="email" id="email" name="_replyto" placeholder="例: example@example.com" required>
-
-  <label for="phone">電話番号</label>
-  <input type="tel" id="phone" name="phone" placeholder="例: 090-1234-5678" required>
-
-  <label for="date">予約希望日</label>
-  <input type="date" id="date" name="date" required>
-
-  <label for="time">予約希望時間</label>
-  <input type="time" id="time" name="time" required>
-
-  <label for="people">人数</label>
-  <input type="number" id="people" name="people" min="2" placeholder="人数を入力" required>
-
-  <label for="message">その他ご要望</label>
-  <textarea id="message" name="message" placeholder="特記事項があればご記入ください"></textarea>
-
-  <!-- 送信後の遷移先 -->
-  <input type="hidden" name="_next" value="C:\Users\81805\OneDrive\デスクトップ\html\yoyaku-thanks.html">
-
-  <!-- スパム防止 -->
-  <input type="text" name="_gotcha" style="display:none">
-
-  <button type="submit">送信</button>
-</form>
-
-  </section>
-
-  <h1>お問い合わせ</h1>
-<section class="main otoiawase">
- <form action="https://formspree.io/f/mrblrnjp" method="POST">
+ <h1>当店の魅力</h1>
+  <section class="about">
   <ul>
-  <li><label for="name">お名前</label>
-  <input type="text" id="name" name="name" placeholder="お名前を入力" required>
-  </li>
- <li><label for="email">メールアドレス</label>
-  <input type="email" id="email" name="_replyto" placeholder="例: example@example.com" required>
-   </li>
- <li><label for="message">お問い合わせ内容</label>
-  <textarea id="message" name="message" placeholder="ご質問・ご相談内容を入力" required></textarea>
-  </li>
-  <!-- 送信後の遷移先（サンクスページ） -->
-  <input type="hidden" name="_next" value="https://あなたのサイト.com/thanks.html">
-
-  <!-- スパム防止用（空欄のままに） -->
-  <input type="text" name="_gotcha" style="display:none">
-
- <li><button type="submit">送信</button></li>
+    <li>🍜 美味しい・安い・楽しい・早い！</li>
+    <li>👪 幅広い層のお客様にご愛顧いただいています</li>
+    <li>📖 本格中華をランチ・ディナーで</li>
+    <li>🍺 ちょい飲み・飲み会にも！</li>
   </ul>
+ </section>
+
+  
 </form>
 </section>
 
